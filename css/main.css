@@ -13,6 +13,9 @@ h2 {
 h3 {
   font-size: 1.2em;
 }
+a {
+  color: #000;
+}
 nav.computer-version {
   position: fixed;
   top: 0;
