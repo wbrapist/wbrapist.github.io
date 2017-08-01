@@ -1,6 +1,5 @@
 html {
   font: 16px 'Lato', sans-serif;
-/*   overflow-y: scroll; */
 }
 body {
   margin: 0 auto;
@@ -65,8 +64,8 @@ nav.mobile-version .content {
   display: none !important;
 }
 article {
-  padding-left: 310px;
-  padding-right: 30px;
+  padding-left: 295px;
+  padding-right: 15px;
 }
 .date {
   font-size: 0.8em;
@@ -80,7 +79,6 @@ article {
     display: block;
   }
   article {
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
-
