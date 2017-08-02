@@ -1,1 +1,0 @@
-git pull origin master && git add * && git commit -m 'upd' && git push origin master
