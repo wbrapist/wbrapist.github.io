@@ -1,6 +1,15 @@
 'use strict';
 
+setMobileContent();
 openNavMenu();
+
+function setMobileContent() {
+  var mobileContent = document.getElementsByClassName('content')[0];
+  var computerContent = document.getElementsByClassName('computer-version')[0];
+  var content = computerContent.innerHTML;
+
+  mobileContent.innerHTML = content;
+}
 
 function openNavMenu() {
   var navMenuButton = document.getElementsByClassName('nav-button')[0];

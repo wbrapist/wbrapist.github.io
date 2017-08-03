@@ -17,16 +17,33 @@ h3 {
 a {
   color: #000;
 }
+a:hover {
+  color: #f64a6e;
+}
+pre {
+  overflow-x: auto;
+  background-color: #f0efef;
+  border: 1px solid #ebeaea;
+  padding: 15px;
+}
+li {
+  list-style-type: none;
+  display: block;
+  margin-bottom: 5px;
+}
 nav.computer-version {
   position: fixed;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 200px;
   height: 100%;
   padding: 10px;
   overflow: auto;
   background-color: #f0efef;
   border-right: 1px solid #ebeaea;
+}
+nav.computer-version ul {
+  padding-left: 15px;
 }
 nav.mobile-version {
   position: absolute;
@@ -35,8 +52,24 @@ nav.mobile-version {
   height: 60px;
   overflow: hidden;
   background: #f0efef;
-  border-bottom: 1px solid #ebeaea;
+  border-bottom: 1px solid #373737;
   display: none;
+}
+nav.mobile-version a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+}
+nav.mobile-version ul {
+  padding: 0;
+}
+nav.mobile-version li {
+  margin: 0;
+  height: 40px;
+}
+nav.mobile-version li:hover {
+  background-color: #808080;
 }
 nav.mobile-version .wrapper {
   position: absolute;
@@ -44,20 +77,20 @@ nav.mobile-version .wrapper {
   height: 60px;
   border-bottom: 1px solid #939393;
 }
-nav.mobile-version .nav-button {
+.nav-button {
   position: absolute;
   width: 60px;
   height: 60px;
   background: url("../img/menu-icon.svg") no-repeat center center;
 }
-nav.mobile-version .nav-button:hover {
+.nav-button:hover {
   cursor: pointer;
 }
-nav.mobile-version .title {
+.title {
   text-align: center;
   margin-top: 20px;
 }
-nav.mobile-version .content {
+.content {
   margin-top: 70px;
   text-align: center;
 }
@@ -68,7 +101,7 @@ nav.mobile-version .content {
   display: none !important;
 }
 article {
-  padding-left: 295px;
+  padding-left: 215px;
   padding-right: 15px;
 }
 .date {
@@ -84,5 +117,6 @@ article {
   }
   article {
     padding-left: 15px;
+    padding-top: 60px;
   }
 }
