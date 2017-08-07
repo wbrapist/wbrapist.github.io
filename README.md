@@ -1,5 +1,1 @@
-# wbrapist.github.io
-Начал переводить документацию к Stylus<br>
-03/08/2017
-
-Отставить. Не начал.
+<a href="wbrapist.github.io">wbrapist.github.io</a>
