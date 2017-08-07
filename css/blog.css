@@ -1,0 +1,21 @@
+body {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1920px;
+}
+summary {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.goal {
+  margin-bottom: 50px;
+}
+@media (max-width: 800px) {
+  body {
+    padding: 5px;
+  }
+}
