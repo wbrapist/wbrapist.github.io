@@ -38,13 +38,12 @@ function hideMobileMenuAfterScroll() {
   window.onscroll = function() {
     var st = window.pageYOffset || document.documentElement.scrollTop;
     var mobileMenu = document.getElementsByClassName('mobile-version')[0];
+    var difference = 5; // number of scroll (rows)
 
-    if (st > lastScrollTop) {
+    if ((st - lastScrollTop) > difference) {
       mobileMenu.style.height = "0px";
-      mobileMenu.style.borderColor = "transparent";
-    } else {
+    } else if ((lastScrollTop - st) > difference) {
       mobileMenu.style.height = "60px";
-      mobileMenu.style.borderColor = "#373737";
     }
 
     lastScrollTop = st;
