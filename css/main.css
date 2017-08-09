@@ -49,9 +49,9 @@ nav.mobile-version {
   position: fixed;
   top: 0;
   width: 100%;
-  -webkit-transition: height 0.5s;
-  -o-transition: height 0.5s;
-  transition: height 0.5s;
+  -webkit-transition: height 0.1s;
+  -o-transition: height 0.1s;
+  transition: height 0.1s;
   height: 60px;
   overflow: hidden;
   background: #f0efef;
