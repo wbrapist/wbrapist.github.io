@@ -46,15 +46,16 @@ nav.computer-version ul {
   padding-left: 15px;
 }
 nav.mobile-version {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  -webkit-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
   height: 60px;
   overflow: hidden;
   background: #f0efef;
   border-bottom: 1px solid #373737;
-  -webkit-box-shadow: 0 3px 10px #000;
-          box-shadow: 0 3px 10px #000;
   display: none;
 }
 nav.mobile-version a {

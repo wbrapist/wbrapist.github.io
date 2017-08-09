@@ -2,6 +2,7 @@
 
 setMobileContent();
 openNavMenu();
+hideMobileMenuAfterScroll();
 
 function setMobileContent() {
   var mobileContent = document.getElementsByClassName('content')[0];
@@ -28,5 +29,24 @@ function openNavMenu() {
       content.className = 'content' + ' hide';
       mobileMenu.style.height = mobileMenuHeight;
     }
+  };
+}
+
+function hideMobileMenuAfterScroll() {
+  var lastScrollTop = 0;  
+
+  window.onscroll = function() {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    var mobileMenu = document.getElementsByClassName('mobile-version')[0];
+
+    if (st > lastScrollTop) {
+      mobileMenu.style.height = "0px";
+      mobileMenu.style.borderColor = "transparent";
+    } else {
+      mobileMenu.style.height = "60px";
+      mobileMenu.style.borderColor = "#373737";
+    }
+
+    lastScrollTop = st;
   };
 }
