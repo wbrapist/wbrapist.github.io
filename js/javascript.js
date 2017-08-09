@@ -41,9 +41,9 @@ function hideMobileMenuAfterScroll() {
     var difference = 5; // number of scroll (rows)
 
     if ((st - lastScrollTop) > difference) {
-      mobileMenu.style.height = "0px";
-    } else if ((lastScrollTop - st) > difference) {
-      mobileMenu.style.height = "60px";
+      mobileMenu.style.display = "none";
+    } else if ((lastScrollTop - st) > difference || st == 0) {
+      mobileMenu.style.display = "block";
     }
 
     lastScrollTop = st;
