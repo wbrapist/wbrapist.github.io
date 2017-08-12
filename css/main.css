@@ -64,7 +64,6 @@ aside nav .nav-title:hover .menu-logo {
   background: url("../img/menu-icon.png") center -30px no-repeat;
 }
 aside nav .content {
-  height: 540px;
   padding: 5px;
   overflow-y: auto;
   border: 1px solid #e8e8e8;
